@@ -1,0 +1,1 @@
+Program in C to find the number of sentences in a file. Lorem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore non ex illum neque hic quod enim voluptates perspiciatis commodi odio?  
