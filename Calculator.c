@@ -1,13 +1,30 @@
+/* Program in C to make a simple calculator */
+
 #include <stdio.h>
 int main()
 {
-	int m=0;
-	do
+	char oper;
+	float x,y;
+	printf("Enter the operator ");
+	scanf("%c",&oper);
+	printf("Enter the operands ");
+	scanf("%f %f", &x, &y);
+	switch(oper)
 	{
-		if(m>10)
-		break;
-		m=m+10;
-	}while(m<50);
-	printf("%d",m);
+		case '+':
+			printf("The sum is = %f", x+y);
+			break;
+		case '-':
+			printf("The difference is = %f", x-y);
+			break;
+		case '*':
+			printf("The multiple is = %f", x*y);
+			break;
+		case '/':
+			printf("The quotient is = %f", x/y);
+			break;
+		default:
+			printf("invalid operator");													
+	}
 	return 0;
 }
