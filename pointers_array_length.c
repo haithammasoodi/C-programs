@@ -2,17 +2,16 @@
 #include<stdio.h>
 int main()
 {
-	int l;
-	char name[100];
+	int l=0;
+	char name[100],*p;
 	printf("Enter your first name ");
 	scanf("%s",&name);
-	int *ln = &l;
-	char *p = &name[0];
+	p = &name[0];
 		while(*p!='\0')
 		{
-			*ln++;
+			l++;
 			p++;
 		}
-	printf("The number of letters in your name are : %d",*ln);
+	printf("The number of letters in your name are : %d",l);
 	return 0;
 }
