@@ -9,12 +9,15 @@ int main()
 	{
 		if (x[i]==n)
 		{
-			printf("number is found at %d",i+1);
 			flag = 1;
 			break;
 		}
 	}
-	if (flag==0)
+	if (flag==1)
+	{
+		printf("number is found at %d",i+1);
+	}
+	else
 	{
 		printf("Element not found");
 	}
